@@ -19,13 +19,6 @@ const model = genAI.getGenerativeModel({
 
 const port = 3000;
 
-const imageToGenerativePart = (filePath) => ({
-    inlineData: {
-      data: fs.readFileSync(filePath).toString('base64'),
-      mimeType: 'image/png',
-    },
-})
-
 app.post('/api/chat', async (req, res) => {
     const userMessage = req.body.message;
 
