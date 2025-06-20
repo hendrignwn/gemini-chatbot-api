@@ -21,3 +21,5 @@ run chatbot in the browser with address url below:
 http://localhost:3000
 ```
 
+![Web UI Chatbot](screenshots/webui.png)
+
